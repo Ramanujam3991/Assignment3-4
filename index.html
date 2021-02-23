@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css"/>
+    <script type="text/javascript" src="form.js"></script>
+    <style>
+        body{
+            background-color: rgb(236, 83, 83);
+            color: rgb(119, 63, 7);
+            font-family: serif;
+            font-weight: bold;
+        }
+        </style>
+    <title>Form validation</title>
+</head>
+<body>
+    <main>
+        <form id="form" action="#" method="GET">
+            <div>
+                <span id="logo-span" style="position: relative;">
+                    <img src="logo.jpg" alt="logo">
+                </span>
+                <span id="header">
+                    Travel Booking Request Form  
+                </span>
+            </div>
+            <hr>
+            <span id="validation-message" class="validation-message" >Please enter mandatory fields</span>
+            <section id="form-row" >
+                <table class="three-td-table">
+                    <tr>
+                        <td>Passenger Contact Info</td>
+                        <td><input type="text" id="fname" class="required" name="fname"><br><label class="form-label">First name*</label></td>
+                        <td><input type="text" id="lname" class="required" name="lname"><br><label class="form-label">Last name*</label></td>
+                    </tr>
+                </table>
+            </section>
+            <section id="form-row" >
+                <table class="three-td-table">
+                    <tr>
+                        <td>Best contact Number</td>
+                        <td><input type="text" id="acode" class="required" name="acode"><br><label class="form-label">Area code*</label></td>
+                        <td>-<input type="text" id="phone" class="required" name="phone"><br><label class="form-label">Phone number*</label></td>
+                    </tr>
+                </table>
+            </section>
+            <section id="form-row">
+                <table class="two-td-table">
+                    <tr>
+                        <td colspan="2">Mailing address</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="saddress" class="address-box required" name="saddress"><br><label class="form-label">Street Address*</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" id="saddress2" class="address-box" name="saddress2"><br><label class="form-label">Street Address2</label></td>
+                    </tr>
+                    <tr>
+                        <td ><input type="text" id="city" class="required" name="city"><br><label class="form-label">City*</label></td>
+                        <td><input type="text" id="state" class="required" name="state"><br><label class="form-label">State/Province*</label></td>
+                    </tr>
+                    <tr>
+                        <td ><input type="text" id="postal" class="required" name="postal"><br><label class="form-label">Postal/Zip Code*</label></td>
+                        <td>
+                            <select  name="coutry" class="required" id="coutry" name="coutry">
+                                <option value=""> Please Select </option>
+                                <option value="United States"> United States </option>
+                                <option value="Afghanistan"> Afghanistan </option>
+                                <option value="Australia"> Australia </option>
+                                <option value="Austria"> Austria </option>
+                                <option value="Canada"> Canada </option>
+                                <option value="Iceland"> Iceland </option>
+                                <option value="India"> India </option>
+                                <option value="other"> Other </option>
+                              </select>
+                              <label class="form-label">Country*</label></td>
+                    </tr>
+                </table>
+            </section>
+            <section id="form-row" >
+                <table class="two-td-table">
+                    <tr>
+                        <td>Email*</td>
+                        <td><input type="email" id="email" name="email" class="required" placeholder="ex: myname@example.com"></td>
+                    </tr>
+                </table>
+            </section>
+            <section id="form-row" >
+                <table class="two-td-table">
+                    <tr>
+                        <td>Verify Email</td>
+                        <td><input type="email" id="emailVerify" name="emailVerify" ></td>
+                    </tr>
+                </table>
+            </section>
+            <section id="form-row" >
+                <table class="two-td-table">
+                    <tr>
+                        <td>Total Number Of Adults</td>
+                        <td><input type="text" id="adults" name="adults" ></td>
+                    </tr>
+                </table>
+            </section>
+            <section id="form-row" >
+                <table class="two-td-table">
+                    <tr>
+                        <td>Adults Names</td>
+                        <td><textarea id="anames" name="anames"></textarea></td>
+                    </tr>
+                </table>
+            </section>
+            <section id="form-row" >
+                <table class="two-td-table">
+                    <tr>
+                        <td>Total No Of Children</td>
+                        <td><input type="text" id="children" name="children" ></td>
+                    </tr>
+                </table>
+            </section>
+            <section id="form-row" >
+                <table class="two-td-table">
+                    <tr>
+                        <td>Children Names</td>
+                        <td><textarea id="cnames" name="cnames"></textarea></td>
+                    </tr>
+                </table>
+            </section>
+            <section id="form-row" >
+                <table class="one-td-table">
+                    <tr>
+                        <td>Cabin available(if applicable)</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="cabin" name="cabin" value="inside">Inside Cabin</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="cabin" name="cabin" value="outside">Outside Cabin</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="form-row" >
+                <table class="one-td-table">
+                    <tr>
+                        <td>Is Anyone Traveling Over The Age Of 55?</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" class="max-age" name="mage" value="yes">Yes</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" class="max-age" name="mage" value="no">No</td>
+                    </tr>
+                </table>
+            </section>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        
+        <p>
+            Privacy Policy-legal document that states how a company or website collects, handles and processes data of its customers
+        </p>
+        <p>
+            Legal-permitted by law
+        </p>
+        <p>
+            Specific instruction copyright &amp; 2021
+        </p>
+    </footer>
+</body>
+</html>

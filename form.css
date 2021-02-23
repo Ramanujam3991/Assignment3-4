@@ -1,0 +1,72 @@
+#form{
+    background-color: rgb(238, 170, 43);
+    margin-top: 4em;
+    margin-bottom: 4em;
+    margin-right: 20em;
+    margin-left: 20em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+#logo{
+    width:5%;
+    float: left;
+}
+#header{
+    width:95%;
+    font-size: 1.5em;
+    
+}
+
+.form-span{
+    display: inline-block;
+    width: 30%;
+}
+
+
+
+.form-label{
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.highlight{
+    background-color: white;
+}
+
+.three-td-table td{
+    width:20%;
+}
+
+.two-td-table td{
+    width:49%;
+}
+
+.two-td-table textarea{
+    margin-left: -0.1em;
+    width: 13em;
+    height: 5em;
+}
+
+.one-td-table td{
+    width:90%;
+}
+
+.address-box{
+    width:25em;
+}
+#submit{
+    margin-left: 0.7em;
+    margin-bottom: 2em;
+    color: white;
+    background-color: maroon;
+}
+.validation-message{
+    color:red;
+    
+}
+
+footer{
+    text-align: center;
+}
+
